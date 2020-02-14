@@ -7,7 +7,7 @@ namespace ConsoleApp
     class PhoneReminderItem : ReminderItem
     {
         //номер телефона, куда нужно послать сообщение
-        string PhoneNumber { get; set; }
+        private string PhoneNumber { get; set; }
 
         public PhoneReminderItem(DateTimeOffset AlarmDate, string AlarmMessage, string PhoneNumber)
             : base(AlarmDate, AlarmMessage)

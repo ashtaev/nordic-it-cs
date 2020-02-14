@@ -7,10 +7,10 @@ namespace ConsoleApp
     class ChatReminderItem : ReminderItem
     {
         // Название чата
-        string ChatName { get; set; }
+        private string ChatName { get; set; }
 
         // Имя аккаунта в чате, которому нужно послать сообщение
-        string AccountName { get; set; }
+        private string AccountName { get; set; }
 
         public ChatReminderItem(DateTimeOffset AlarmDate, string AlarmMessage, string ChatName, string AccountName)
             : base(AlarmDate, AlarmMessage)

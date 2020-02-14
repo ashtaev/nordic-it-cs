@@ -7,13 +7,13 @@ namespace ConsoleApp
     class ReminderItem
     {
         // Дата и время будильника
-        public DateTimeOffset AlarmDate { get; set; }
+        protected DateTimeOffset AlarmDate { get; set; }
 
         // Сообщение, соответствующее будильнику
-        public string AlarmMessage { get; set; }
+        protected string AlarmMessage { get; set; }
 
         // Время до срабатывания будильника. Рассчитываться как текущее время минус AlarmDate
-        public TimeSpan TimeToAlarm
+        protected TimeSpan TimeToAlarm
         {
             get
             {
@@ -22,7 +22,7 @@ namespace ConsoleApp
         }
 
         // Просрочено ли событие
-        public bool IsOutdated
+        protected bool IsOutdated
         {
             get
             {
