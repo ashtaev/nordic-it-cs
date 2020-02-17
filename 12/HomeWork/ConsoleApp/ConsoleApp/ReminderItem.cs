@@ -32,10 +32,10 @@ namespace ConsoleApp
         }
 
         // Конструктор
-        public ReminderItem(DateTimeOffset AlarmDate, string AlarmMessage)
+        public ReminderItem(DateTimeOffset alarmDate, string alarmMessage)
         {
-            this.AlarmDate = AlarmDate;
-            this.AlarmMessage = AlarmMessage;
+            this.AlarmDate = alarmDate;
+            this.AlarmMessage = alarmMessage;
         }
 
         // Просрочено ли событие

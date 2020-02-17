@@ -9,10 +9,10 @@ namespace ConsoleApp
         //номер телефона, куда нужно послать сообщение
         private string PhoneNumber { get; set; }
 
-        public PhoneReminderItem(DateTimeOffset AlarmDate, string AlarmMessage, string PhoneNumber)
-            : base(AlarmDate, AlarmMessage)
+        public PhoneReminderItem(DateTimeOffset alarmDate, string alarmMessage, string phoneNumber)
+            : base(alarmDate, alarmMessage)
         {
-            this.PhoneNumber = PhoneNumber;
+            this.PhoneNumber = phoneNumber;
         }
 
         public override void WriteProperties()

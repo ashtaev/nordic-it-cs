@@ -12,8 +12,8 @@ namespace ConsoleApp
         // Имя аккаунта в чате, которому нужно послать сообщение
         private string AccountName { get; set; }
 
-        public ChatReminderItem(DateTimeOffset AlarmDate, string AlarmMessage, string ChatName, string AccountName)
-            : base(AlarmDate, AlarmMessage)
+        public ChatReminderItem(DateTimeOffset alarmDate, string alarmMessage, string chatName, string accountName)
+            : base(alarmDate, alarmMessage)
         {
             this.ChatName = ChatName;
             this.AccountName = AccountName;
